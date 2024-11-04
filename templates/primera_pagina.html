@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="=UTF-8">
+        <title>Principal</title>
+        <style> 
+            body {background-color: lightblue};
+        </style> 
+</head>
+<body>
+    <h1> Primera Página</h1>
+    <p style="color: red;">Primera página en flask</p>
+
+</body>
+<footer>
+    <p>Haz clic <a href="{{ url_for('primera_elegante') }}">aquí</a> para ir a la primera pagina </p> 
+    <p>Haz clic <a href="{{ url_for('segunda') }}">aquí</a> para ir a la egunda pagina  </p> 
+    <p>Haz clic <a href="{{ url_for('tercera_hola_nombre') }}">aquí</a>tercera, ncon variables </p> 
+    <p>Haz clic <a href="{{ url_for('tercera_hola_nombre_2') }}">aquí</a>tercera, ncon variables </p> 
+    <p>Haz clic <a href="{{ url_for('tercera_hola_nombre_3') }}">aquí</a>tercera, ncon variables </p> 
+</footer>
+</html>
+
