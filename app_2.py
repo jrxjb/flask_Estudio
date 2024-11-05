@@ -2,6 +2,17 @@ from flask import Flask, render_template
 
 app2= Flask(__name__)
 
+
+#clase para la pelicula 
+
+class Pelicula:
+    def __init__(self,nombre,año, protagonista):
+        self.nombre       = nombre
+        self.año          = año
+        self.protagonista = protagonista
+
+clase_pelicula = Pelicula(nombre="volver al futuro",año="1985",protagonista="Quien sabe el nombre")
+
 @app2.route("/estructuras")
 def estructura_datos():
     peliculas = [
@@ -13,7 +24,10 @@ def estructura_datos():
         "nombre":"Lobo de wall street",
         "Año":2013
     }
-    return render_template("Estructuras.html", movies=peliculas,destacada=lobo)
+    return render_template("Estructuras.html", movies=peliculas,destacada=lobo,favorita=clase_pelicula)
+
 
 if __name__=="__main__":
     app2.run()
+
+    

@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from app_2 import  estructura_datos
 
 # crear unainstancia 
 
@@ -56,7 +57,6 @@ def tercera_hola_nombre_3():
     "curso"   : "Flask con python, html5 y css"
     }
     return render_template("variable.html", **kwargs) 
-
 
 
 #Para ejecutarlo desde el mismo documento 
