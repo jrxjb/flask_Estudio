@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from app_2 import  estructura_datos
 
-# crear unainstancia 
+# crear una instancia 
 
 app = Flask(__name__)
 

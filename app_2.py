@@ -26,6 +26,16 @@ def estructura_datos():
     }
     return render_template("Estructuras.html", movies=peliculas,destacada=lobo,favorita=clase_pelicula)
 
+@app2.route("/condicionales")
+def condiconales_pruebas():
+    return render_template("condicionales.html")
+
+
+
+
+
+
+
 
 if __name__=="__main__":
     app2.run()
