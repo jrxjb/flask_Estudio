@@ -8,26 +8,31 @@
         </style> 
 </head>
 <body>
+    {% if equipo == "Real" %}
     <div>
+       
        <h1> Jugadores 1</h1>
        <ol>
             <li> Juan</li>
             <li>Pedro</li>
             <li>Carlos</li>
        </ol>
+
     </div>
+    {% elif  equipo  == "barcelona" %}
     <div>
-        <h1>Jugadores 2</h1>
-        <ol>
-            <li>Alejandro</li>
-            <li>camilo   </li>
-            <li>Antonio  </li>
-        </ol>
-
+        
+            <h1>Jugadores 2</h1>
+            <ol>
+                <li>Alejandro</li>
+                <li>camilo   </li>
+                <li>Antonio  </li>
+            </ol>
+        
     </div>
-
-
-    <h1> Jugadores 2</h1>
+    {% else %}
+    <h3 style="color: rgb(104, 27, 13);">{ El equipo "{{equipo}}" no se encuentra en la base de datos }</h3>
+    {% endif %}
 </body>
 
 <footer> 

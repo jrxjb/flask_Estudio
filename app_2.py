@@ -28,7 +28,7 @@ def estructura_datos():
 
 @app2.route("/condicionales")
 def condiconales_pruebas():
-    return render_template("condicionales.html")
+    return render_template("condicionales.html",equipo = "La Vinotinto")
 
 
 
